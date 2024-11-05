@@ -26,7 +26,7 @@ Di lain sisi, stateful widget merupakan suatu widget yang bersifat dinamis sehin
 Perbedaan utama dari stateless widget dan stateful widget ialah stateless widget bersifat statis, sedangkan stateful widget bersifat dinamis.
 
 2. Sebutkan widget apa saja yang kamu gunakan pada proyek ini dan jelaskan fungsinya.
-Beberapa widget yang digunakan di proyek ini ialah:
+Jawaban: Beberapa widget yang digunakan di proyek ini ialah:
 - Scaffold: Digunakan untuk memberikan dasar dari aplikasi, seperti `appBar`, `body`, dan `bottomNavigationBar`
 - AppBar: Digunakan untuk menampilkan bagian atas halaman yang biasanya berisi judul aplikasi dan aksi penting.
 - Column dan Row: Digunakan untuk menyusun widget secara vertikal (dengan `column`) dan horizontal (`row`)
@@ -39,6 +39,7 @@ Beberapa widget yang digunakan di proyek ini ialah:
 
 
 3. Apa fungsi dari setState()? Jelaskan variabel apa saja yang dapat terdampak dengan fungsi tersebut
+Jawaban:
 `setState()` merupakan fungsi yang digunakan pada Stateful Widget. Fungsi ini digunakan untuk memperbarui state dan membangun kembali widget yang ada untuk memberikan data terbaru. 
 
 Contoh variabel yang berdampak dalam `setState()`:
@@ -46,8 +47,16 @@ Contoh variabel yang berdampak dalam `setState()`:
 - `npm, name, className`: `setState()` digunakan untuk menampilkan data baru.
 
 4. Jelaskan perbedaan antara const dengan final.
+Jawaban:
 - `const` digunakan untuk membuat nilai variabel menjadi konstan saat di kompilasi. Nilai ii tidak bisa diubah saat kompilasi maupun runtime. const biasanya digunakan untuk data yang sudah diketahui dan tetap dari awal. 
 
 - `final` digunakan untuk variabel yang nilainya ditetapkan satu kali dan tidak dapat diubah lagi. final dapat menerima nilai saat di runtime.
 
 5. Jelaskan bagaimana cara kamu mengimplementasikan checklist-checklist di atas.
+Jawaban:
+1) Membuat aplikasi flutter terlebih yang bernama biiluved, lalu membuat file faru bernama `menu.dart` dalam `biiluved/lib`
+2) Memindahkan `MyHomePage` ke `menu.dart`. Lalu, menghapus class state yang berada di `main.dart` dan menambahkan import `menu.dart` ke file tersebut.
+3) Mengubah widget halaman di `menu.dart` menjadi Stateless. Lalu, membuat tombol-tombol dan pengaturan warna untuk aplikasi.
+4) Membuat widget `ItemCard` untuk menampilkan item yang ada dalam bentuk card dan juga menambahkan `SnackBar`.
+5) Menambahkan layout untuk `MyHomePage`, yaitu dengan `AppBar`, `Text`, dan `GridView`
+6) Menjalankan aplikasi.
