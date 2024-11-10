@@ -28,7 +28,7 @@ Perbedaan utama dari stateless widget dan stateful widget ialah stateless widget
 2. Sebutkan widget apa saja yang kamu gunakan pada proyek ini dan jelaskan fungsinya.
 Beberapa widget yang digunakan di proyek ini ialah:
 - Scaffold: Digunakan untuk memberikan dasar dari aplikasi, seperti `appBar`, `body`, dan `bottomNavigationBar`
-- AppBar: 
+- AppBar: Digunakan untuk menampilkan bagian atas halaman yang biasanya berisi judul aplikasi dan aksi penting.
 - Column dan Row: Digunakan untuk menyusun widget secara vertikal (dengan `column`) dan horizontal (`row`)
 - Text: Digunakan untuk menampilkan teks statis
 - GridView: Digunakan untuk menyusun item dalam bentuk grid ataupun tabel

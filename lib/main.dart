@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:biiluved/menu.dart';
+import 'package:biiluved/screens/menu.dart';
 
 void main() {
   runApp(const MyApp());
