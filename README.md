@@ -76,7 +76,7 @@ Selain itu, masih ada beberapa elemen yang tidak digunakan:
 3) `Switch`: mirip dengan Checkbox, tetapi tampilannya berupa saklar.
 4) `Radio Button`: untuk memilih satu opsi dari beberapa pilihan
 
-### 7. Bagaimana cara kamu mengatur tema (theme) dalam aplikasi Flutter agar aplikasi yang dibuat konsisten? Apakah kamu mengimplementasikan tema pada aplikasi yang kamu buat?
+### 4. Bagaimana cara kamu mengatur tema (theme) dalam aplikasi Flutter agar aplikasi yang dibuat konsisten? Apakah kamu mengimplementasikan tema pada aplikasi yang kamu buat?
 Jawaban:
 
 Theme telah diatur dalam `ThemeData` dalam widget `MaterialApp`. Saya juga teah menggunakan `ColorSchenme.fromSwatch` untuk mengatur warna-warna pada theme. 
@@ -89,7 +89,7 @@ theme: ThemeData(
   useMaterial3: true,
 )
 ```
-### 9. Bagaimana cara kamu menangani navigasi dalam aplikasi dengan banyak halaman pada Flutter?
+### 5. Bagaimana cara kamu menangani navigasi dalam aplikasi dengan banyak halaman pada Flutter?
 Jawaban:
 
 #### Navigator.push
