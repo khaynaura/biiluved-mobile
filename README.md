@@ -19,7 +19,7 @@ samples, guidance on mobile development, and a full API reference.
   <summary><b>Tugas 9: Integrasi Layanan Web Django dengan Aplikasi Flutter</b></summary>
   
 ### 1.  Mengapa Perlu Membuat Model untuk Pengambilan atau Pengiriman Data JSON? Apakah Akan Terjadi Error jika Tidak Membuat Model Terlebih Dahulu? 
-
+Jawaban:
 Pembuatan model sangatlah penting bagi aplikasi yang akan berinteraksi dengan data JSON.
 
 Beberapa alasannya ialah:
@@ -40,7 +40,7 @@ Apabila model tidak dibuat terlebih dahulu, akan terjadi beberapa kesalahan:
 
 ### 2. Jelaskan fungsi dari library http yang sudah kamu implementasikan pada tugas ini.
 Library `http` dalam Flutter berfungsi sebagai alat utama untuk melakukan komunikasi antara aplikasi Flutter dan server backend Django. Fungsi-fungsi utamanya meliputi:
-
+Jawaban:
 **1) Melakukan HTTP Request:** Library ini memungkinkan aplikasi Flutter untuk mengirim berbagai jenis permintaan HTTP seperti GET, POST, PUT, dan DELETE ke server Django.
 
 **2) Mengambil Data dari API:** Dengan `http`, aplikasi dapat mengambil data dari API Django dalam format JSON atau format lainnya yang didukung.
@@ -54,7 +54,7 @@ Library `http` dalam Flutter berfungsi sebagai alat utama untuk melakukan komuni
 Dalam tugas ini, library `http` digunakan untuk mengambil data item, mengirim data login dan registrasi, serta mengelola berbagai permintaan lainnya yang diperlukan untuk interaksi antara frontend Flutter dan backend Django.
 
 ### 3. Jelaskan fungsi dari CookieRequest dan jelaskan mengapa instance CookieRequest perlu untuk dibagikan ke semua komponen di aplikasi Flutter.
-
+Jawaban:
 `CookieRequest` adalah komponen yang berfungsi untuk mengelola sesi autentikasi pengguna melalui cookie dalam aplikasi Flutter yang berkomunikasi dengan backend Django. Berikut adalah fungsinya secara rinci:
 
 **1) Menyimpan Session Cookies:**
@@ -81,6 +81,7 @@ Instance yang dibagikan memungkinkan komponen lain untuk mengakses data pengguna
 Dengan mengelola cookies secara terpusat, aplikasi dapat lebih mudah menerapkan kebijakan keamanan terkait sesi dan autentikasi, seperti pengaturan waktu kedaluwarsa atau enkripsi data sesi.
 
 ### 4. Jelaskan mekanisme pengiriman data mulai dari input hingga dapat ditampilkan pada Flutter.
+Jawaban:
 Mekanisme pengiriman data dalam aplikasi Flutter yang terhubung dengan backend Django dapat dijelaskan melalui langkah-langkah berikut:
 
 #### 1) Input Data oleh Pengguna
@@ -107,6 +108,7 @@ Objek Dart yang telah diparsing digunakan untuk memperbarui tampilan UI aplikasi
 Flutter menggunakan state management untuk memastikan bahwa perubahan data langsung tercermin pada UI, memberikan pengalaman pengguna yang responsif dan interaktif.
 
 ### 5. Jelaskan mekanisme autentikasi dari login, register, hingga logout. Mulai dari input data akun pada Flutter ke Django hingga selesainya proses autentikasi oleh Django dan tampilnya menu pada Flutter.
+Jawaban:
 Mekanisme autentikasi dalam aplikasi Flutter yang terhubung dengan backend Django melibatkan beberapa langkah yang saling terkait, mulai dari registrasi pengguna hingga logout. Berikut adalah penjelasan detailnya:
 
 #### a. Registrasi (Register)
@@ -161,7 +163,14 @@ CookieRequest menghapus session cookie yang tersimpan, menandakan bahwa pengguna
 **5) Navigasi Kembali ke Halaman Login:**
 Setelah proses logout selesai, aplikasi Flutter mengarahkan pengguna kembali ke halaman login, memastikan bahwa akses ke halaman yang memerlukan autentikasi dibatasi hingga pengguna login kembali.
 
-### 6. 
+### 6. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step! (bukan hanya sekadar mengikuti tutorial).
+Jawaban:
+1) Membuat django app baru, yaitu authentication untuk membuat views login dan register yang nanti akan disambungkan ke flutter. Setelah itu, saya membuat login.dart dan register.dart sebagai halaman autentikasi di project flutter nantinya. Saya menggunakan package `pbp_django_auth` dan `provided` untuk menghubungkan proses login dan register tersebut.
+2) Membuat model kostum dari data JSON pada proyek django yang sebelumnya telah dibuat. Setelah itu, saya membuat `product_entry.dart` sebagai model dari aplikasi ini.
+3) Menambahkan `views.py` pada main proyek Django sebelumnya untuk `create product flutter` agar user bisa input produk baru.
+4) Menyesuaikan `product_form.dart` agar input yang diminta sesuai dengan proyek sebelumnya.
+5) Setelah itu, saya membuat `list_product.dart` dan `product_detail.dart` untuk menampilkan item yang telah diinput user pada proyek django, maupun item yang diinput user dalam flutter.
+6) Memastikan bahwa item yang dimunculkan hanyalah item milik user yang login.
 
 </details>
 
