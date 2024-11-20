@@ -60,3 +60,5 @@ Jawaban:
 4) Membuat widget `ItemCard` untuk menampilkan item yang ada dalam bentuk card dan juga menambahkan `SnackBar`.
 5) Menambahkan layout untuk `MyHomePage`, yaitu dengan `AppBar`, `Text`, dan `GridView`
 6) Menjalankan aplikasi.
+
+
